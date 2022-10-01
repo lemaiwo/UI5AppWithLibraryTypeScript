@@ -1,0 +1,18 @@
+{
+  "generator-ui5-ts-library": {
+    "libraryname": "myUI5Library",
+    "namespace": "com.myorg",
+    "framework": "OpenUI5",
+    "frameworkVersion": "1.106.0",
+    "author": "lemaiwo",
+    "newdir": true,
+    "tstypes": "@openui5/ts-types-esm",
+    "tstypesVersion": "1.106.0",
+    "namespaceURI": "com/myorg",
+    "librarynamespace": "com.myorg.myUI5Library",
+    "librarynamespaceURI": "com/myorg/myUI5Library",
+    "librarybasepath": "../../../",
+    "frameworklowercase": "openui5",
+    "setupCompleted": true
+  }
+}

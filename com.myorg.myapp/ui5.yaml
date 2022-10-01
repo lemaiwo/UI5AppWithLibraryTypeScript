@@ -1,0 +1,26 @@
+specVersion: "2.0"
+metadata:
+  name: com.myorg.myapp
+type: application
+framework:
+  name: OpenUI5
+  version: "1.106.0"
+  libraries:
+    - name: sap.m
+    - name: sap.ui.core
+    - name: sap.ui.unified
+    - name: themelib_sap_fiori_3
+server:
+  customMiddleware:
+  - name: ui5-middleware-servestatic
+    afterMiddleware: compression
+    mountPath: /resources/com/myorg/myUI5Library
+    configuration:
+      rootPath: "../com.myorg.myUI5Library/dist/resources/com/myorg/myUI5Library"
+  - name: ui5-middleware-livereload
+    afterMiddleware: compression
+    configuration:
+      debug: true
+      extraExts: "xml,json,properties"
+      port: 35729
+      path: "webapp"

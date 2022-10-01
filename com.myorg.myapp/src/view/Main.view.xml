@@ -1,0 +1,12 @@
+<mvc:View
+	controllerName="com.myorg.myapp.controller.Main"
+	displayBlock="true"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:myLib="com.myorg.myUI5Library">
+
+	<Page title="{i18n>appTitle}" >
+		<myLib:Example text="test"/>
+	</Page>
+
+</mvc:View>
