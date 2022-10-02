@@ -38,7 +38,7 @@ export default class Example extends Control {
 			text: {
 				type: "string",
 				group: "Data",
-				defaultValue: null
+				defaultValue: ""
 			},
 			/**
 			 * The color to use (default to "Default" color).
